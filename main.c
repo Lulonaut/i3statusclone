@@ -2,7 +2,6 @@
 #include <unistd.h>
 #include <sys/time.h>
 #include <locale.h>
-#include <malloc.h>
 #include "block.h"
 #include "config.h"
 
@@ -17,9 +16,7 @@ int main() {
     for (int i = 0; i < 1; i++) {
         blocks[i].delay = blocks[i].delay * 1000;
         blocks[i].last_update = 0;
-        char output[32];
-        sprintf(output, "%d", i);
-        blocks[i].current_output = output;
+        blocks[i].current_output = "placeholder";
     }
 
     printf("{\"version\":1}\n");
