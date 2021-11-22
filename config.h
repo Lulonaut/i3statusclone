@@ -1,5 +1,6 @@
 #include "block.h"
 
 Block blocks[] = {
-        {"Test: ", "date +'%d.%m.%Y %T'", 1},
+        {"Hello, ", "whoami",              1},
+        {"\uF017 ", "date +'%d.%m.%Y %T'", 1},
 };

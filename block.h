@@ -7,10 +7,9 @@ typedef struct {
     long long delay;
     char *current_output;
     long long last_update;
-
 } Block;
 
 
-Block update_block(Block block, long long time, int force);
+Block update_block(Block block, long long time);
 
 #endif //BLOCK_H__
